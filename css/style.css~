@@ -1,0 +1,4 @@
+# Custom CSS
+body.page-template-page-fullsingle-split {
+	background-color: #d2d2d2;
+}
