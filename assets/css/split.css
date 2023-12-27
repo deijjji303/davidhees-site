@@ -209,9 +209,6 @@ body.page-template-page-fullsingle-split p {
   letter-spacing: 0.4px;
   color: #34281C;
 }
-.split-intro .tagline {
-  color: #E4DDCD;
-}
 
 .split-bio {
   padding: 40px 0 20px 0;
@@ -257,7 +254,6 @@ body.page-template-page-fullsingle-split p {
   line-height: inherit;
 }
 .split-bio h1, .split-bio .h1,
-.split-bio h2, .split-bio .h2,
 .split-bio h3, .split-bio .h3,
 .split-bio h4, .split-bio .h4,
 .split-bio h5, .split-bio .h5,
@@ -267,7 +263,6 @@ body.page-template-page-fullsingle-split p {
   color: inherit;
 }
 .split-bio h1 small, .split-bio .h1 small,
-.split-bio h2 small, .split-bio .h2 small,
 .split-bio h3 small, .split-bio .h3 small,
 .split-bio h4 small, .split-bio .h4 small,
 .split-bio h5 small, .split-bio .h5 small,
@@ -430,4 +425,20 @@ video.video {
 
 span.highlight {
     background-color: #34281C;
+}
+
+
+.split-bio > .tagline  {
+  font: revert;
+  font-family: Montserrat, sans-serif;
+  letter-spacing: -2px;
+}
+
+.tagline {
+  color: #E4DDCD;
+  font-family: Montserrat, sans-serif;
+}
+
+.centered {
+    text-align: center;
 }

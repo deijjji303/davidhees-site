@@ -119,7 +119,7 @@ body.page-template-page-fullsingle-split {
   line-height: 33px;
   letter-spacing: -0.2px;
   color: #34281C;
-  animation: fadein 2s;
+  animation: fadein 1s;
 }
 body.page-template-page-fullsingle-split p {
   color: #34281C;
@@ -130,6 +130,21 @@ body.page-template-page-fullsingle-split p {
   height: 100vh;
   display: flex;
 }
+.fs-split .split-image {
+  width: 50%;
+  height: 100vh;
+  background-size: cover;
+}
+.fs-split .split-content {
+  width: 50%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+}
+
+@media (max-aspect-ratio : 6/4) {
 @media (max-width: 800px) {
   .fs-split {
     height: auto;
@@ -138,13 +153,6 @@ body.page-template-page-fullsingle-split p {
     width: 90%;
   }
 }
-.fs-split .split-image {
-  width: 50%;
-  height: 100vh;
-  background-size: cover;
-}
-
-@media (max-aspect-ratio : 6/4) {
 @media (max-width: 800px) {
   .fs-split .split-image {
     height: unset;
@@ -162,20 +170,12 @@ body.page-template-page-fullsingle-split p {
     }
   }
 }
-}
-.fs-split .split-content {
-  width: 50%;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: auto;
-}
 @media (max-width: 800px) {
   .fs-split .split-content {
     width: 100%;
     height: auto;
   }
+}
 }
 .fs-split .split-content .split-content-vertically-center {
   padding: 80px;
@@ -208,9 +208,6 @@ body.page-template-page-fullsingle-split p {
   margin-bottom: 40px;
   letter-spacing: 0.4px;
   color: #34281C;
-}
-.split-intro .tagline {
-  color: #E4DDCD;
 }
 
 .split-bio {
@@ -257,7 +254,6 @@ body.page-template-page-fullsingle-split p {
   line-height: inherit;
 }
 .split-bio h1, .split-bio .h1,
-.split-bio h2, .split-bio .h2,
 .split-bio h3, .split-bio .h3,
 .split-bio h4, .split-bio .h4,
 .split-bio h5, .split-bio .h5,
@@ -267,7 +263,6 @@ body.page-template-page-fullsingle-split p {
   color: inherit;
 }
 .split-bio h1 small, .split-bio .h1 small,
-.split-bio h2 small, .split-bio .h2 small,
 .split-bio h3 small, .split-bio .h3 small,
 .split-bio h4 small, .split-bio .h4 small,
 .split-bio h5 small, .split-bio .h5 small,
@@ -430,4 +425,20 @@ video.video {
 
 span.highlight {
     background-color: #34281C;
+}
+
+
+.split-bio > .tagline  {
+  font: revert;
+  font-family: Montserrat, sans-serif;
+  letter-spacing: -2px;
+}
+
+.tagline {
+  color: #E4DDCD;
+  font-family: Montserrat, sans-serif;
+}
+
+.centered {
+    text-align: center;
 }
